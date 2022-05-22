@@ -2,7 +2,7 @@
 /* main page image */
 .bgimage {
     height:100vh;
-    background: url('images/main_img.jpg');
+    background: url('assests/images/main_img.jpg');
     background-size:cover;
     position:relative;
 }
