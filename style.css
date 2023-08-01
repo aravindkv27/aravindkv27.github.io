@@ -1,5 +1,8 @@
 
 /* main page image */
+body{
+  background-color: #1a1b18;
+}
 .bgimage {
     height:100vh;
     background: url('assests/images/main_img.jpg');
@@ -287,4 +290,60 @@
   .header-links {
     display: none;
   }
+}
+
+button{
+  position: relative;
+  height: 65px;
+  width: 210px;
+  margin: 0 40px;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  background: #f0f0ef;
+  overflow: hidden;
+  transition: 0.6s;
+}
+button:first-child{
+  color: #206592;
+  border-color: #206592;
+}
+button:before, button:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  filter: blur(30px);
+  opacity: 0.4;
+  transition: 0.6s;
+}
+button:before{
+  width: 60px;
+  background: rgba(255,255,255,0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+button:after{
+  width: 30px;
+  background: rgba(255,255,255,0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+button:hover:before,
+button:hover:after{
+  opacity: 0.6;
+  transform: translateX(320px) skewX(-45deg);
+}
+button:hover{
+  color: #8a8490;
+}
+button:hover:first-child{
+  background: #e5e5e6;
+}
+button:hover:last-child{
+  background: #f7f5f8;
 }
